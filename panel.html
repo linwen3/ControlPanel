@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Panel</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="css/filter.css"/>
+</head>
+<body>
+<div class="row show-grid">
+    <div class="span4" data-original-title="" title="">
+       <h5>Filter Orders</h5>
+        <div>
+            <label>Order Status:</label>
+                <input type="radio">New
+                <input type="radio">Accepted
+                <input type="radio">Packed
+                <input type="radio">Canceled
+        </div>
+        <div>
+            <label>Expected Ship date:</label>
+            <input type="text"/>
+        </div>
+        <div>
+            <label>Expected Ship time:</label>
+            <input type="text"/>
+        </div>
+        <div>
+            <label>Multi/Single items:</label>
+            <input type="radio">Multi
+            <input type="radio">Single
+            <input type="radio">Both
+        </div>
+        <div>
+            <label>SIOC:</label>
+            <input type="radio">SIOC
+            <input type="radio">Non-SIOC
+            <input type="radio">Both
+        </div>
+        <div>
+            <label>Fast Track:</label>
+            <input type="checkbox">
+        </div>
+
+    </div>
+    <div class="span5 subfilter">
+        <h5>Filter Orders</h5>
+        <div>
+            <input type="checkbox"/>
+            Gilt Wrap Orders only
+        </div>
+        <div>
+            <input type="checkbox"/>
+            Hazmat orders only
+        </div>
+        <div>
+            Batch size: <input type="text"/>
+        </div>
+        <hr class="filter-separator"/>
+    </div>
+</div>
+<div class="row show-grid">
+    <div class="span9">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
