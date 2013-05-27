@@ -60,6 +60,12 @@
 .control-panel .batch-con > h5 {
   color: #f89406;
 }
+.progress-striped {
+  width: 250px;
+  display: none;
+  text-align: center;
+  margin: 50px auto;
+}
 /*
   common function
 */
