@@ -8,59 +8,74 @@
 </head>
 <body>
 <div class="row show-grid">
-    <div class="span4" data-original-title="" title="">
-       <h5>Filter Orders</h5>
-        <div>
-            <label>Order Status:</label>
-                <input type="radio">New
-                <input type="radio">Accepted
-                <input type="radio">Packed
-                <input type="radio">Canceled
+    <div class="control-panel">
+        <div class="span5">
+            <div class="filter-con" data-original-title="" title="">
+                <h5>Filter Orders</h5>
+                <div>
+                    <label>Order Status:</label>
+                    <input type="radio">New
+                    <input type="radio">Accepted
+                    <input type="radio">Packed
+                    <input type="radio">Canceled
+                </div>
+                <div>
+                    <label>Expected Ship date:</label>
+                    <input type="text"/>
+                </div>
+                <div>
+                    <label>Expected Ship time:</label>
+                    <input type="text"/>
+                </div>
+                <div>
+                    <label>Multi/Single items:</label>
+                    <input type="radio">Multi
+                    <input type="radio">Single
+                    <input type="radio">Both
+                </div>
+                <div>
+                    <label>SIOC:</label>
+                    <input type="radio">SIOC
+                    <input type="radio">Non-SIOC
+                    <input type="radio">Both
+                </div>
+                <div>
+                    <label>Fast Track:</label>
+                    <input type="checkbox">
+                </div>
+                <label></label><button type="button" class="btn btn-success" >Filter Orders</button>
+
+            </div>
         </div>
-        <div>
-            <label>Expected Ship date:</label>
-            <input type="text"/>
-        </div>
-        <div>
-            <label>Expected Ship time:</label>
-            <input type="text"/>
-        </div>
-        <div>
-            <label>Multi/Single items:</label>
-            <input type="radio">Multi
-            <input type="radio">Single
-            <input type="radio">Both
-        </div>
-        <div>
-            <label>SIOC:</label>
-            <input type="radio">SIOC
-            <input type="radio">Non-SIOC
-            <input type="radio">Both
-        </div>
-        <div>
-            <label>Fast Track:</label>
-            <input type="checkbox">
+        <div class="span5">
+            <div class=" batch-con subfilter">
+                <h5>Create a batch based on filters</h5>
+                <div>
+                    <input type="checkbox"/>
+                    Gilt Wrap Orders only
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    Hazmat orders only
+                </div>
+                <div>
+                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                </div>
+                <hr class="filter-separator"/>
+                <h5>Create a batach based on ASINs</h5>
+                <div>
+                    ASIN: <input type="text"/>
+                </div>
+                <div>
+                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                </div>
+            </div>
         </div>
 
     </div>
-    <div class="span5 subfilter">
-        <h5>Filter Orders</h5>
-        <div>
-            <input type="checkbox"/>
-            Gilt Wrap Orders only
-        </div>
-        <div>
-            <input type="checkbox"/>
-            Hazmat orders only
-        </div>
-        <div>
-            Batch size: <input type="text"/>
-        </div>
-        <hr class="filter-separator"/>
-    </div>
 </div>
 <div class="row show-grid">
-    <div class="span9">
+    <div class="span10">
         <table class="table table-striped">
             <thead>
             <tr>
