@@ -15,22 +15,44 @@ var panel = {
 
         // initialize
         t.dataView.init()
-
+        t.eventManage.init()
+        t.check.init()
         t.filter.linkwork.init()
     },
+    // manage the event lifecycle
+    eventManage: {
+        filter: $("button.btn-success"),
+        batch: $("button.btn-batch"),
+        init: function(){
+            var t  = this;
+
+        }
+    },
+
     // control the central  configuration of the option  in the panel
     configurator: {
        // Order Status
-            // linkwork to the filters
-       // date
-       // time
-       // items
-       // SIOC
-       // Track
+        "status": $("input[name='status']:checked").val(),
+        "Multi/Single": $("input[name='items']:checked").val(),
+        "SIOC": $("input[name='SIOC']:checked").val(),
+        "Gilt":$("input[name='Gilt']:checked:visible").val() == "on" ? "yes" : "no",
+        "Hazmat": $("input[name='Hazmat']:checked:visible").val() == "on" ? "yes" : "no",
+        "ASIN": $("input[name='ASIN']:visible").val()
     },
     //check the format of the input
     check: {
+        input: $("input[type='text']"),
+        init: function(){
+            var t = this;
 
+            t.input.focus(function(){
+                var t = $(this);
+                t.popover({ title: 'Notice', content: "The content of input is for filter datat to xxxxx, the format must be such as xxxxxx" })
+                    .blur(function () {
+                        $(this).popover('hide');
+                    });
+            })
+        }
     },
     // the logic of the filter panel
     filter: {
@@ -41,8 +63,6 @@ var panel = {
             "container": $(".batch-con"),
             init: function(){
                 var t = this
-                console.info("control :", t.control)
-                console.info("container :", t.container)
 
                 t.link()
             },
@@ -56,7 +76,6 @@ var panel = {
                       var _t = $(this),
                           index = btn.index(_t)
 
-                      console.info("index :", index)
                       t.container.hide()
                       $(t.container.get(index)).show()
 
@@ -84,7 +103,22 @@ var panel = {
         // build the data
         build: function(){
             var t = this;
-
+            // query engine config
+            t.filterConfig = {
+                "status": panel.configurator["status"],
+                "Multi/Single": panel.configurator["Multi/Single"],
+                "SIOC": panel.configurator["SIOC"]
+            },
+            t.batchConfig = {
+                "Gilt": panel.configurator["Gilt"],
+                "Hazmat": panel.configurator["Hazmat"]
+            },
+            t.asinConfig = {
+                "ASIN": panel.configurator["ASIN"]
+            }
+             console.info("panel.data", panel.data)
+             console.info("panel.configurator", panel.configurator)
+             console.info("panel.configurator", t.filterConfig)
             //manipulate the t.data and render it on ui
             t.data = t.query(panel.data, panel.configurator)
             //render the data
@@ -120,7 +154,7 @@ var panel = {
                         // iterate the config to check
                         // element[key] == config[value]
                         $.each(config, function(key, value){
-                            if(element[key] != config[value]){
+                            if([key] != config[value]){
                                 _flag = false
                             }
 

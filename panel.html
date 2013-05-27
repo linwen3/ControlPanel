@@ -51,15 +51,15 @@
             <div class="batch-con subfilter" style="display: block;">
                 <h5>Create a batch based on filters</h5>
                 <div>
-                    <input type="checkbox"/>
+                    <input type="checkbox" name="Gilt"/>
                     Gilt Wrap Orders only
                 </div>
                 <div>
-                    <input type="checkbox"/>
+                    <input type="checkbox" name="Hazmat"/>
                     Hazmat orders only
                 </div>
                 <div>
-                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                    Batch size: <input type="text"/>    <button class="btn btn-batch" type="button" data-toggle="modal" data-target="#myModal">Create a batch</button>
                 </div>
                 <hr class="filter-separator"/>
                 <h5>Create a batach based on ASINs</h5>
@@ -67,7 +67,7 @@
                     ASIN: <input type="text"/>
                 </div>
                 <div>
-                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                    Batch size: <input type="text"/>    <button class="btn btn-batch" type="button" data-toggle="modal" data-target="#myModal">Create a batch</button>
                 </div>
             </div>
             <div class="batch-con subfilter">
@@ -77,18 +77,18 @@
                 </div>
                 <hr class="filter-separator"/>
                 <div>
-                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                    Batch size: <input type="text"/>    <button class="btn btn-batch" type="button" data-toggle="modal" data-target="#myModal">Create a batch</button>
                 </div>
                 <div>
-                    <input type="checkbox"/>
+                    <input type="checkbox" name="Gilt"/>
                     Gilt Wrap Orders only
                 </div>
                 <div>
-                    <input type="checkbox"/>
+                    <input type="checkbox" name="Hazmat"/>
                     Hazmat orders only
                 </div>
                 <div>
-                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                    Batch size: <input type="text"/>    <button class="btn btn-batch" type="button" data-toggle="modal" data-target="#myModal">Create a batch</button>
                 </div>
             </div>
             <div class="batch-con subfilter">
@@ -98,41 +98,41 @@
                     ASIN: <input type="text"/>
                 </div>
                 <div>
-                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                    Batch size: <input type="text"/>    <button class="btn btn-batch" type="button" data-toggle="modal" data-target="#myModal">Create a batch</button>
                 </div>
                 <hr class="filter-separator"/>
                 <div>
-                    <input type="checkbox"/>
+                    <input type="checkbox" name="Gilt"/>
                     Gilt Wrap Orders only
                 </div>
                 <div>
-                    <input type="checkbox"/>
+                    <input type="checkbox" name="Hazmat"/>
                     Hazmat orders only
                 </div>
                 <div>
-                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                    Batch size: <input type="text"/>    <button class="btn btn-batch" type="button" data-toggle="modal" data-target="#myModal">Create a batch</button>
                 </div>
             </div>
             <div class="batch-con subfilter">
                 <h5>Create a batch based on filters</h5>
                 <div>
-                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                    Batch size: <input type="text"/>    <button class="btn btn-batch" type="button" data-toggle="modal" data-target="#myModal">Create a batch</button>
                 </div>
                 <div>
-                    <input type="checkbox"/>
+                    <input type="checkbox" name="Gilt"/>
                     Cancel - Gilt Wrap Orders only
                 </div>
                 <div>
-                    <input type="checkbox"/>
+                    <input type="checkbox" name="Hazmat"/>
                     Cancel - Hazmat orders only
                 </div>
                 <hr class="filter-separator"/>
                 <h5>Create a batach based on ASINs</h5>
                 <div>
-                    Cancel - ASIN: <input type="text"/>
+                    Cancel - ASIN: <input type="text" value="ASIN"/>
                 </div>
                 <div>
-                    Cancel - Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                    Cancel - Batch size: <input type="text"/>    <button class="btn btn-batch" type="button" data-toggle="modal" data-target="#myModal">Create a batch</button>
                 </div>
             </div>
         </div>
@@ -201,9 +201,23 @@ Template for the dataListView
     </tbody>
 </table>
 -->
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3 id="myModalLabel">Batch Filter</h3>
+    </div>
+    <div class="modal-body">
+        <p>Sorry for implement delay</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
 <!--  -->
 <script type="text/javascript" src="lib/jquery/jquery-1.8.js"></script>
 <script type="text/javascript" src="lib/mustache/mustache.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="server/data.js"></script>
 <script type="text/javascript" src="js/panel.js"></script>
 </body>
