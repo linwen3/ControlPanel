@@ -7,8 +7,8 @@
  */
 
 // simulate the data for manipulating
-var data = {
-    results: [
+var data = '{
+    "results": [
         {
         "id": "1",
         "status": "New",
@@ -71,4 +71,4 @@ var data = {
         "ASIN": "1234151234"
     }
     ]
-}
+}'

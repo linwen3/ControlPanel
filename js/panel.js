@@ -15,12 +15,21 @@ var panel = {
     },
     dataView: {
         template : $("#temp_dataViewList"),
+        data: data,
         init: function(){
             var t = this
 
-            console.info("ddddddd")
+            t.render()
+
         },
         render: function(){
+            var t = this,
+                templ = t.template.html()
+            console.info("data :", t.data)
+            console.info("templ :", templ)
+            console.info("output :", output)
+            var output = Mustache.render(t.data, templ)
+
 
         },
         update: function(){
@@ -28,4 +37,5 @@ var panel = {
         }
     }
 }
+
 panel.init()
