@@ -7,7 +7,7 @@
  */
 
 // simulate the data for manipulating
-var data = '{
+var data = {
     "results": [
         {
         "id": "1",
@@ -69,6 +69,356 @@ var data = '{
         "Gilt": "yes",
         "Hazmat": "yes",
         "ASIN": "1234151234"
-    }
+    },{
+            "id": "2",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Non-SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234123455123"
+        },{
+            "id": "3",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Multi",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "no",
+            "ASIN": "123451234"
+        },{
+            "id": "4",
+            "status": "Canceled",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Both",
+            "Gilt": "no",
+            "Hazmat": "yes",
+            "ASIN": "1241234"
+        },{
+            "id": "5",
+            "status": "Packed",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "SIOC",
+            "Gilt": "no",
+            "Hazmat": "no",
+            "ASIN": "123412431234"
+        },{
+            "id": "6",
+            "status": "Accepted",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Both",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234151234"
+        },{
+            "id": "2",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Non-SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234123455123"
+        },{
+            "id": "3",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Multi",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "no",
+            "ASIN": "123451234"
+        },{
+            "id": "4",
+            "status": "Canceled",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Both",
+            "Gilt": "no",
+            "Hazmat": "yes",
+            "ASIN": "1241234"
+        },{
+            "id": "5",
+            "status": "Packed",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "SIOC",
+            "Gilt": "no",
+            "Hazmat": "no",
+            "ASIN": "123412431234"
+        },{
+            "id": "6",
+            "status": "Accepted",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Both",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234151234"
+        },{
+            "id": "2",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Non-SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234123455123"
+        },{
+            "id": "3",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Multi",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "no",
+            "ASIN": "123451234"
+        },{
+            "id": "4",
+            "status": "Canceled",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Both",
+            "Gilt": "no",
+            "Hazmat": "yes",
+            "ASIN": "1241234"
+        },{
+            "id": "5",
+            "status": "Packed",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "SIOC",
+            "Gilt": "no",
+            "Hazmat": "no",
+            "ASIN": "123412431234"
+        },{
+            "id": "6",
+            "status": "Accepted",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Both",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234151234"
+        },{
+            "id": "2",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Non-SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234123455123"
+        },{
+            "id": "3",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Multi",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "no",
+            "ASIN": "123451234"
+        },{
+            "id": "4",
+            "status": "Canceled",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Both",
+            "Gilt": "no",
+            "Hazmat": "yes",
+            "ASIN": "1241234"
+        },{
+            "id": "5",
+            "status": "Packed",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "SIOC",
+            "Gilt": "no",
+            "Hazmat": "no",
+            "ASIN": "123412431234"
+        },{
+            "id": "6",
+            "status": "Accepted",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Both",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234151234"
+        },{
+            "id": "2",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Non-SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234123455123"
+        },{
+            "id": "3",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Multi",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "no",
+            "ASIN": "123451234"
+        },{
+            "id": "4",
+            "status": "Canceled",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Both",
+            "Gilt": "no",
+            "Hazmat": "yes",
+            "ASIN": "1241234"
+        },{
+            "id": "5",
+            "status": "Packed",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "SIOC",
+            "Gilt": "no",
+            "Hazmat": "no",
+            "ASIN": "123412431234"
+        },{
+            "id": "6",
+            "status": "Accepted",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Both",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234151234"
+        },{
+            "id": "2",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Non-SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234123455123"
+        },{
+            "id": "3",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Multi",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "no",
+            "ASIN": "123451234"
+        },{
+            "id": "4",
+            "status": "Canceled",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Both",
+            "Gilt": "no",
+            "Hazmat": "yes",
+            "ASIN": "1241234"
+        },{
+            "id": "5",
+            "status": "Packed",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "SIOC",
+            "Gilt": "no",
+            "Hazmat": "no",
+            "ASIN": "123412431234"
+        },{
+            "id": "6",
+            "status": "Accepted",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Both",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234151234"
+        },{
+            "id": "2",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Non-SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234123455123"
+        },{
+            "id": "3",
+            "status": "New",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Multi",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "no",
+            "ASIN": "123451234"
+        },{
+            "id": "4",
+            "status": "Canceled",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "Both",
+            "Gilt": "no",
+            "Hazmat": "yes",
+            "ASIN": "1241234"
+        },{
+            "id": "5",
+            "status": "Packed",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Single",
+            "SIOC": "SIOC",
+            "Gilt": "no",
+            "Hazmat": "no",
+            "ASIN": "123412431234"
+        },{
+            "id": "6",
+            "status": "Accepted",
+            "date": "01/06/2013",
+            "time": "24:00",
+            "Multi/Single": "Both",
+            "SIOC": "SIOC",
+            "Gilt": "yes",
+            "Hazmat": "yes",
+            "ASIN": "1234151234"
+        }
     ]
-}'
+}

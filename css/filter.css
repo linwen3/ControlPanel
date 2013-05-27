@@ -44,7 +44,11 @@
 .control-panel .filter-con > div {
   margin-bottom: 10px;
 }
+.control-panel .filter-con > h5 {
+  color: #f89406;
+}
 .control-panel .batch-con {
+  display: none;
   padding: 10px 20px;
 }
 .control-panel .batch-con .filter-separator {
@@ -52,6 +56,9 @@
 }
 .control-panel .batch-con > div {
   margin-bottom: 10px;
+}
+.control-panel .batch-con > h5 {
+  color: #f89406;
 }
 /*
   common function

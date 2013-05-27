@@ -14,10 +14,10 @@
                 <h5>Filter Orders</h5>
                 <div>
                     <label>Order Status:</label>
-                    <input type="radio">New
-                    <input type="radio">Accepted
-                    <input type="radio">Packed
-                    <input type="radio">Canceled
+                    <input type="radio" name="status" value="New">New
+                    <input type="radio" name="status" value="Accepted">Accepted
+                    <input type="radio" name="status" value="Packed">Packed
+                    <input type="radio" name="status" value="Canceled">Canceled
                 </div>
                 <div>
                     <label>Expected Ship date:</label>
@@ -29,15 +29,15 @@
                 </div>
                 <div>
                     <label>Multi/Single items:</label>
-                    <input type="radio">Multi
-                    <input type="radio">Single
-                    <input type="radio">Both
+                    <input type="radio" name="items" value="Multi">Multi
+                    <input type="radio" name="items" value="Single">Single
+                    <input type="radio" name="items" value="Both">Both
                 </div>
                 <div>
                     <label>SIOC:</label>
-                    <input type="radio">SIOC
-                    <input type="radio">Non-SIOC
-                    <input type="radio">Both
+                    <input type="radio" name="SIOC" value="SIOC">SIOC
+                    <input type="radio" name="SIOC" value="Non-SIOC">Non-SIOC
+                    <input type="radio" name="SIOC" value="Both">Both
                 </div>
                 <div>
                     <label>Fast Track:</label>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="span5">
-            <div class=" batch-con subfilter">
+            <div class="batch-con subfilter" style="display: block;">
                 <h5>Create a batch based on filters</h5>
                 <div>
                     <input type="checkbox"/>
@@ -68,6 +68,71 @@
                 </div>
                 <div>
                     Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                </div>
+            </div>
+            <div class="batch-con subfilter">
+                <h5>Create a batch based on filters</h5>
+                <div>
+                    ASIN: <input type="text"/>
+                </div>
+                <hr class="filter-separator"/>
+                <div>
+                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    Gilt Wrap Orders only
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    Hazmat orders only
+                </div>
+                <div>
+                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                </div>
+            </div>
+            <div class="batch-con subfilter">
+                <h5>Create a batch based on filters</h5>
+                <h5>Create a batach based on ASINs</h5>
+                <div>
+                    ASIN: <input type="text"/>
+                </div>
+                <div>
+                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                </div>
+                <hr class="filter-separator"/>
+                <div>
+                    <input type="checkbox"/>
+                    Gilt Wrap Orders only
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    Hazmat orders only
+                </div>
+                <div>
+                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                </div>
+            </div>
+            <div class="batch-con subfilter">
+                <h5>Create a batch based on filters</h5>
+                <div>
+                    Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    Cancel - Gilt Wrap Orders only
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    Cancel - Hazmat orders only
+                </div>
+                <hr class="filter-separator"/>
+                <h5>Create a batach based on ASINs</h5>
+                <div>
+                    Cancel - ASIN: <input type="text"/>
+                </div>
+                <div>
+                    Cancel - Batch size: <input type="text"/>    <button class="btn" type="button">Create a batch</button>
                 </div>
             </div>
         </div>
@@ -106,6 +171,7 @@
             <td>{{date}}</td>
             <td>{{time}}</td>
             <td>{{Multi/Single}}</td>
+            <td>{{Gilt}}</td>
             <td>{{SIOC}}</td>
             <td>{{Hazmat}}</td>
             <td>{{ASIN}}</td>
